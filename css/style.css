@@ -113,7 +113,7 @@ figcaption a {
 }
 .contenido-5 {
   grid-area: contenido-5;
-  margin-top: 15px;
+  margin-top: 140px;
   padding: 2em;
   background-color: black;
   color: lightyellow;
@@ -228,7 +228,7 @@ aside {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "contenido-1 contenido-1 " "contenido-2 contenido-2 " "contenido-3 contenido-3 " "contenido-6 contenido-6 " "contenido-5 contenido-5 ";
   }
-  .contenedor2 .blog3 {
+  .blog3 {
     margin-top: 5px;
   }
   .contenido-6 {
