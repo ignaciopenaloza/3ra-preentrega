@@ -113,10 +113,8 @@ figcaption a {
 }
 .contenido-5 {
   grid-area: contenido-5;
-  margin-top: 140px;
-  padding: 2em;
-  background-color: black;
-  color: lightyellow;
+  margin-top: 100px;
+  padding: 1em;
 }
 
 .redes1 {
@@ -170,6 +168,13 @@ strong {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "contenido-1" "contenido-2" "contenido-3" "contenido-6" "contenido-5";
+}
+
+.contenido-5 {
+  grid-area: contenido-5;
+  margin-top: 50px;
+  padding: 1em;
+  background-color: black;
 }
 
 .contenido-6 {
