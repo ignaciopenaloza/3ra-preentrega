@@ -1,0 +1,56 @@
+.contenido-1{
+    grid-area: contenido-1;
+    background-color: black;
+    color: gold;
+    padding: 2em;
+    margin: 0;
+
+
+    h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h2{
+    font-size: small;
+    color: lightgoldenrodyellow;
+    }
+}
+p{
+    color: black;
+    margin-top: 40px;
+    
+    
+    
+}
+
+.cita{
+    font-style: italic;
+    color: lightgoldenrodyellow;
+    margin-bottom: 40px;
+    margin-top: 0%;
+}
+
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color: goldenrod;
+    
+    
+}
+h4{
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: medium;
+
+}
+@media(min-width: 1024px){
+
+    .proyectoUno{
+        margin-right: 50px;
+        margin-left: 50px;
+        font-size: medium;
+        
+        
+    }
+}
+

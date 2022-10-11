@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Gothic+A1:wght@300&family=Sawarabi+Gothic&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  font-family: Ghotic Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(to top right, #0F2027, #203A43, #2C5364);
+}
+
+.contenido-2 {
+  grid-area: contenido-2;
+}
+.contenido-2 .nav-link {
+  color: gold;
+  font-size: small;
+  font-weight: lighter;
+  text-decoration: none;
+}
+@media (min-width: 500px) {
+  .contenido-2 .nav-link {
+    font-size: large;
+  }
+}
+
+.contenido-1 {
+  grid-area: contenido-1;
+  background-color: black;
+  color: gold;
+  padding: 2em;
+  margin: 0;
+}
+.contenido-1 h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.contenido-1 h2 {
+  font-size: small;
+  color: lightgoldenrodyellow;
+}
+
+p {
+  color: black;
+  margin-top: 40px;
+}
+
+.cita {
+  font-style: italic;
+  color: lightgoldenrodyellow;
+  margin-bottom: 40px;
+  margin-top: 0%;
+}
+
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
+  color: goldenrod;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+@media (min-width: 1024px) {
+  .proyectoUno {
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: medium;
+  }
+}
+img {
+  width: 180px;
+  height: 180px;
+  padding-bottom: 5px;
+}
+
+figcaption {
+  color: goldenrod;
+}
+figcaption a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+@media (min-width: 500px) {
+  img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 768px) {
+  img {
+    width: 220px;
+    height: 190px;
+  }
+}
+@media (min-width: 1024px) {
+  img {
+    height: 240px;
+    width: 250px;
+    margin-bottom: 15px;
+  }
+}
+.contenido-5 {
+  grid-area: contenido-5;
+  margin-top: 15px;
+  padding: 2em;
+  background-color: black;
+  color: lightyellow;
+}
+
+.redes1 {
+  list-style-type: none;
+}
+.redes1 .redes3 {
+  text-decoration: none;
+  margin-right: 31px;
+}
+.redes1 .redes3 .redes3 {
+  text-decoration: none;
+  margin-right: 31px;
+}
+.redes1 .redes3 .face {
+  width: 35px;
+  height: 35px;
+}
+.redes1 .redes3 .insta {
+  width: 35px;
+  height: 35px;
+}
+
+strong {
+  color: lightslategrey;
+}
+
+.servicios {
+  color: lightyellow;
+}
+
+.contenedor {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "contenido-1" "contenido-2" "contenido-3" "contenido-4" "contenido-5";
+}
+
+.contenido-3 {
+  grid-area: contenido-3;
+  color: lightgoldenrodyellow;
+}
+
+.contenido-4 {
+  grid-area: contenido-4;
+}
+
+.contenedor2 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "contenido-1" "contenido-2" "contenido-3" "contenido-6" "contenido-5";
+}
+
+.contenido-6 {
+  grid-area: contenido-6;
+}
+
+.fotoBlog {
+  width: 180px;
+  height: 180px;
+  padding-bottom: 5px;
+  border-style: groove;
+  border-color: goldenrod;
+}
+
+aside {
+  color: lightslategrey;
+}
+
+@media (min-width: 500px) {
+  .contenedor {
+    margin: 0%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contenido-1 contenido-1" "contenido-2 contenido-2" "contenido-3 contenido-3" "contenido-4 contenido-4" "contenido-5 contenido-5";
+  }
+  .blog3 {
+    margin-top: 64px;
+  }
+  .contenido-3 {
+    margin-top: -50px;
+  }
+  .contenido-4 {
+    gap: 16px;
+    margin-bottom: 5em;
+    margin-top: 5em;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor {
+    margin-bottom: 1, 5em;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "contenido-1 contenido-1 contenido-1" "contenido-2 contenido-2 contenido-2" "contenido-3 contenido-3 contenido-3" "contenido-4 contenido-4 contenido-4" "contenido-5 contenido-5 contenido-5";
+  }
+  .contenido-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contenedor2 {
+    margin: 0%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contenido-1 contenido-1 " "contenido-2 contenido-2 " "contenido-3 contenido-3 " "contenido-6 contenido-6 " "contenido-5 contenido-5 ";
+  }
+  .contenedor2 .blog3 {
+    margin-top: 5px;
+  }
+  .contenido-6 {
+    -moz-column-gap: 21px;
+         column-gap: 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  aside {
+    border-style: groove;
+    border-color: goldenrod;
+    width: 120px;
+    height: 367px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .blog {
+    margin: 0%;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .fotoBlog {
+    width: 200PX;
+    height: 250PX;
+    margin-left: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

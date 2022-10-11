@@ -1,0 +1,177 @@
+@import "fuentes";
+@import "generales";
+@import "nav";
+@import "titulo";
+@import "imagen";
+@import "footer";
+
+
+strong{
+    color: lightslategrey;
+}
+.servicios{
+    color: lightyellow;
+}
+.contenedor{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contenido-1"
+    "contenido-2"
+    "contenido-3"
+    "contenido-4"
+    "contenido-5"
+    ;
+
+}
+
+.contenido-3{
+    grid-area: contenido-3; 
+    color: lightgoldenrodyellow;}
+ 
+ 
+ .contenido-4{
+        grid-area: contenido-4;}
+
+
+
+
+
+
+.contenedor2{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contenido-1"
+    "contenido-2"
+    "contenido-3"
+     "contenido-6"
+    "contenido-5";
+}
+    .contenido-6{
+        grid-area: contenido-6;}
+    
+
+        .fotoBlog{
+        width: 180px;
+        height: 180px;
+        padding-bottom: 5px;
+        border-style: groove;
+        border-color: goldenrod;}
+        aside{
+            color: lightslategrey;
+        }
+    
+
+        
+
+
+@media(min-width:500px)
+{
+
+    
+        .contenedor{
+            margin: 0%;
+            justify-content: center;
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows:  1fr 1fr;
+            grid-template-areas: 
+            "contenido-1 contenido-1"
+            "contenido-2 contenido-2"
+            "contenido-3 contenido-3"
+            "contenido-4 contenido-4"
+            "contenido-5 contenido-5";
+            }
+        
+.blog3{
+    margin-top: 64px;
+}
+
+.contenido-3{
+    margin-top: -50px;}
+    .contenido-4{
+        gap: 16px;
+        margin-bottom: 5em;
+         margin-top: 5em;}
+         
+       
+}
+@media(min-width: 768px) {
+            
+    .contenedor{
+        margin-bottom: 1,5em;
+        grid-template-columns: 1fr 4fr 1fr ;
+        grid-template-areas:  "contenido-1 contenido-1 contenido-1"
+        "contenido-2 contenido-2 contenido-2"
+        "contenido-3 contenido-3 contenido-3"
+        "contenido-4 contenido-4 contenido-4"
+        
+        "contenido-5 contenido-5 contenido-5";} 
+        .contenido-4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+
+            
+}  .contenedor2{
+    margin: 0%;
+   justify-content: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+   "contenido-1 contenido-1 "
+   "contenido-2 contenido-2 "
+   "contenido-3 contenido-3 "
+   "contenido-6 contenido-6 "
+   "contenido-5 contenido-5 ";
+   .blog3{
+    margin-top: 5px;
+   }
+}
+
+
+ 
+
+   .contenido-6{
+       column-gap: 21px;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;}
+       
+       aside{
+           border-style: groove;
+           border-color: goldenrod;
+           width: 120px;
+           height: 367px ;
+           margin-left: 50px;
+           margin-right: 50px;
+           } 
+        .blog{
+               margin: 0%;
+               margin-left: 80px;
+               margin-right: 80px;
+                }
+              
+            .fotoBlog{
+               width: 200PX;
+               height: 250PX;
+               margin-left: 50px;
+              
+               }
+       
+   
+
+
+}
+
+@media( min-whidt: 1024px){
+    
+}
+
+       
+        
+

@@ -1,0 +1,20 @@
+.contenido-2{
+    grid-area: contenido-2;
+
+    .nav-link
+    {
+    color: gold;
+    font-size: small;
+    font-weight: lighter;
+    text-decoration: none;}
+    
+    @media(min-width:500px)
+    {
+         .nav-link{
+        font-size: large;}
+    }
+
+
+}
+
+    
