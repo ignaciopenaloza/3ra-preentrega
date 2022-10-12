@@ -3,14 +3,14 @@
 
     .nav-link
     {
-    color: gold;
-    font-size: small;
-    font-weight: lighter;
-    text-decoration: none;}
+        color: gold;
+        font-size: small;
+        font-weight: lighter;
+        text-decoration: none;}
     
     @media(min-width:500px)
     {
-         .nav-link{
+    .nav-link{
         font-size: large;}
     }
 
