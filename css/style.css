@@ -19,6 +19,7 @@ body {
 
 .contenido-2 {
   grid-area: contenido-2;
+  background-color: linear-gradient(to top right, #0F2027, #203A43, #2C5364);
 }
 .contenido-2 .nav-link {
   color: gold;
@@ -52,6 +53,11 @@ p {
   margin-top: 40px;
 }
 
+.servicios {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
 .cita {
   font-style: italic;
   color: lightgoldenrodyellow;
@@ -61,7 +67,7 @@ p {
 
 h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: x-large;
+  font-size: large;
   color: goldenrod;
 }
 
@@ -113,20 +119,18 @@ figcaption a {
 }
 .redes1 {
   list-style-type: none;
+  text-decoration: none;
+  margin-right: 31px;
 }
 .redes1 .redes3 {
   text-decoration: none;
   margin-right: 31px;
 }
-.redes1 .redes3 .redes3 {
-  text-decoration: none;
-  margin-right: 31px;
-}
-.redes1 .redes3 .face {
+.redes1 .face {
   width: 35px;
   height: 35px;
 }
-.redes1 .redes3 .insta {
+.redes1 .insta {
   width: 35px;
   height: 35px;
 }
@@ -150,6 +154,8 @@ strong {
 .contenido-3 {
   grid-area: contenido-3;
   color: lightgoldenrodyellow;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .contenido-4 {

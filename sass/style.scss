@@ -6,6 +6,8 @@
 @import "footer";
 
 
+
+
 strong{
     color: lightslategrey;
 }
@@ -28,7 +30,10 @@ strong{
 
 .contenido-3{
     grid-area: contenido-3; 
-    color: lightgoldenrodyellow;}
+    color: lightgoldenrodyellow;
+    margin-left: 80px;
+    margin-right: 80px;
+}
  
  
 .contenido-4{
