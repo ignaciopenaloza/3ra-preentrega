@@ -1,7 +1,7 @@
 
 img{width:($ancho/2)-20; height: ($alto/2)-20; padding-bottom: 5px;}
 
-figcaption{ color: goldenrod;
+figcaption{ color: goldenrod; font-size: small;
     a{ text-decoration: none; color: goldenrod; font-size: small;}}
 
  
@@ -10,11 +10,12 @@ figcaption{ color: goldenrod;
 
 @media(min-width: 768px){
    
-    img{
-        width: ($ancho/2)-30; height: ($alto/2)-30;}
+    img{ width: ($ancho/2)-30; height: ($alto/2)-30;}
+    .solitaria{width: ($ancho/2)+20; height: ($ancho/2)+20; }
 }
 
 
 @media(min-width: 1024px){
- img{ height: (alto/2)+60; width: ($ancho/2)+50; margin-bottom: 15px;}
+    img{ height: (alto/2)+60; width: ($ancho/2)+50; margin-bottom: 15px;}
+    .solitaria{width: (ancho/2)+35;}
 }
