@@ -1,3 +1,4 @@
+@import "vg";
 @import "fuentes";
 @import "generales";
 @import "nav";
@@ -5,142 +6,129 @@
 @import "imagen";
 @import "footer";
 
-
-
-
-strong{
-    color: lightslategrey;
-}
-.servicios{
-    color: lightyellow;
-}
 .contenedor{
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "contenido-1"
+    grid-template-areas:
+    "contenido-1"
     "contenido-2"
     "contenido-3"
     "contenido-4"
-    "contenido-5"
-    ;
+    "contenido-5";
 
 }
+.contenido-1{
+    grid-area: contenido-1;
+    background-color: black;
+    color: $color;
+    padding: 2em;
+    margin: 0;}
 
 .contenido-3{
     grid-area: contenido-3; 
     color: lightgoldenrodyellow;
-    margin-left: 80px;
-    margin-right: 80px;
-}
- 
+    font-size: medium;
+    margin-left: 60px;
+    margin-right: 60px;}
  
 .contenido-4{
-    grid-area: contenido-4;}
-
+    grid-area: contenido-4;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    gap: 15px;}
+    
+.contenido-5{
+    grid-area: contenido-5;
+    margin-top: 1,5em;
+    margin-bottom: 0%;
+    background-color: black;}
 
 .contenedor2{
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "contenido-1"
+    grid-template-areas:
+    "contenido-1"
     "contenido-2"
     "contenido-3"
     "contenido-6"
-    "contenido-5";
-}
-.contenido-5{
-    grid-area: contenido-5;
-    margin-top: 50px;
-    padding: 1em;
-    background-color: black;
-    
-    
-    
+    "contenido-5";}
 
-}
 .contenido-6{
-    grid-area: contenido-6;}
-    
+    grid-area: contenido-6; margin-bottom: 40px;
 
+}
+    
 .fotoBlog{
     width: 180px;
     height: 180px;
     padding-bottom: 5px;
     border-style: groove;
-    border-color: goldenrod;}
- aside{
-     color: lightslategrey;}
+    border-color: $color;}
+
+aside{color: lightslategrey; margin-left: 40px; margin-right: 40px;}
     
+@media(min-width:500px){
 
-        
+.contenedor{
+    margin: 0%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas: 
+    "contenido-1 contenido-1"
+    "contenido-2 contenido-2"
+    "contenido-3 contenido-3"
+    "contenido-4 contenido-4"
+    "contenido-5 contenido-5";}
 
+.contenido-3{margin-top: 21px;}
+.contenido-4{gap: 16px;margin-bottom: 3em; margin-top: 3em;}
 
-@media(min-width:500px)
-{
+.contenedor2{
+    margin: 0%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas: 
+    "contenido-1 contenido-1"
+    "contenido-2 contenido-2"
+    "contenido-3 contenido-3"
+    "contenido-4 contenido-4"
+    "contenido-6 contenido-6"
+    "contenido-5 contenido-5";} 
 
-     .contenedor{
-            margin: 0%;
-            justify-content: center;
-            display: grid;
-            grid-template-columns:1fr 1fr;
-            grid-template-rows:  1fr 1fr;
-            grid-template-areas: 
-            "contenido-1 contenido-1"
-            "contenido-2 contenido-2"
-            "contenido-3 contenido-3"
-            "contenido-4 contenido-4"
-            "contenido-5 contenido-5";
-            }
-        
-        .blog3{
-            margin-top: 64px;}
+.blog3{margin-top: 21px;}}
 
-        .contenido-3{
-            margin-top: -50px;}
-        .contenido-4{
-            gap: 16px;
-            margin-bottom: 5em;
-             margin-top: 5em;}
-         
-       
-}
 @media(min-width: 768px) {
             
     .contenedor{
         margin-bottom: 1,5em;
-        grid-template-columns: 1fr 4fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr ;
         grid-template-areas:  "contenido-1 contenido-1 contenido-1"
         "contenido-2 contenido-2 contenido-2"
         "contenido-3 contenido-3 contenido-3"
         "contenido-4 contenido-4 contenido-4"
-        
         "contenido-5 contenido-5 contenido-5";} 
-        .contenido-4{
-        display: flex;
-        flex-direction: row;
-        justify-content: center; }   
+        
+    .contenido-4{ display: flex; flex-direction: flex; justify-content: center;
+    margin-left: 15px; margin-right: 15px; }   
 
     .contenedor2{
-         margin: 0%;
-         justify-content: center;
+        margin: 0%;
+        justify-content: center;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-         grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
         grid-template-areas: 
-        "contenido-1 contenido-1 "
-        "contenido-2 contenido-2 "
-        "contenido-3 contenido-3 "
-        "contenido-6 contenido-6 "
-        "contenido-5 contenido-5 ";
+        "contenido-1 contenido-1 contenido-1"
+        "contenido-2 contenido-2 contenido-2"
+        "contenido-3 contenido-3 contenido-3"
+        "contenido-6 contenido-6 contenido-6"
+        "contenido-5 contenido-5 contenido-5";
     }
-    .blog3{
-        margin-top: 5px;}
+    .blog3{ margin-top: 5px;}
 
      .contenido-6{
-       column-gap: 21px;
+       column-gap: 8px;
        display: flex;
        flex-direction: row;
        justify-content: center;}
@@ -150,23 +138,28 @@ strong{
            border-color: goldenrod;
            width: 120px;
            height: 367px ;
-           margin-left: 50px;
-           margin-right: 50px;
-           } 
+           margin-right: 10px;} 
         .blog{
                margin: 0%;
-               margin-left: 80px;
+               margin-left: 25px;
                margin-right: 80px;
                 }
               
             .fotoBlog{
                width: 200PX;
                height: 250PX;
-               margin-left: 50px;}
+               margin-left: 10px;}
 }
 
-@media( min-whidt: 1024px){}
+@media( min-whidth: 1024px){
 
-       
-        
 
+    .contenedor{
+        margin-bottom: 1,5em;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:  "contenido-1 contenido-1 contenido-1"
+        "contenido-2 contenido-2 contenido-2"
+        "contenido-3 contenido-3 contenido-3"
+        "contenido-4 contenido-4 contenido-4"
+        "contenido-5 contenido-5 contenido-5";} }

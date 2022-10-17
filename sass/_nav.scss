@@ -1,24 +1,39 @@
 .contenido-2{
     grid-area: contenido-2;
+    justify-content: center;
     background-color: linear-gradient( to top right,#0F2027, #203A43,#2C5364);
     
-   
-
+    
     .nav-link
     {
         color: gold;
         font-size: small;
         font-weight: lighter;
-        text-decoration: none;}
+        text-decoration: none;
+        list-style: none;}
     
-    @media(min-width:500px)
-    {
-    .nav-link{
-        font-size: large;}
+@media(min-width:500px){
+
+    .nav justify-content-center{
+        display: flex;
+        justify-content: center;
+        color: goldenrod;
+        gap: 80px;}}
         
-    }
+        
+        @media(min-whidth: 768px){
 
-
+            .nav-link{
+                font-size: medium;
+            }
+        }
+        
 }
+
+ 
+
+            
+
+            
 
     

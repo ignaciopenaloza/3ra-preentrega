@@ -19,6 +19,7 @@ body {
 
 .contenido-2 {
   grid-area: contenido-2;
+  justify-content: center;
   background-color: linear-gradient(to top right, #0F2027, #203A43, #2C5364);
 }
 .contenido-2 .nav-link {
@@ -26,43 +27,29 @@ body {
   font-size: small;
   font-weight: lighter;
   text-decoration: none;
+  list-style: none;
 }
 @media (min-width: 500px) {
+  .contenido-2 .nav justify-content-center {
+    display: flex;
+    justify-content: center;
+    color: goldenrod;
+    gap: 80px;
+  }
+}
+@media (min-whidth: 768px) {
   .contenido-2 .nav-link {
-    font-size: large;
+    font-size: medium;
   }
 }
 
-.contenido-1 {
-  grid-area: contenido-1;
-  background-color: black;
-  color: gold;
-  padding: 2em;
-  margin: 0;
-}
-.contenido-1 h1 {
+h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.contenido-1 h2 {
+
+h2 {
   font-size: small;
-  color: lightgoldenrodyellow;
-}
-
-p {
-  color: black;
-  margin-top: 40px;
-}
-
-.servicios {
-  margin-left: 80px;
-  margin-right: 80px;
-}
-
-.cita {
-  font-style: italic;
-  color: lightgoldenrodyellow;
-  margin-bottom: 40px;
-  margin-top: 0%;
+  color: lightyellow;
 }
 
 h3 {
@@ -77,13 +64,38 @@ h4 {
   font-size: medium;
 }
 
-@media (min-width: 1024px) {
-  .proyectoUno {
-    margin-right: 50px;
-    margin-left: 50px;
-    font-size: medium;
-  }
+p {
+  color: black;
+  margin-top: 40px;
 }
+
+.servicios {
+  margin-left: 80px;
+  margin-right: 80px;
+  color: lightyellow;
+}
+
+.cita {
+  font-style: italic;
+  color: lightyellow;
+  margin-bottom: 40px;
+  margin-top: 4%;
+}
+
+.proyectoUno {
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: medium;
+}
+.proyectoUno strong {
+  color: lightslategrey;
+}
+
+.blog {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 img {
   width: 180px;
   height: 180px;
@@ -96,23 +108,24 @@ figcaption {
 figcaption a {
   text-decoration: none;
   color: goldenrod;
+  font-size: small;
 }
 
 @media (min-width: 500px) {
   img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
   }
 }
 @media (min-width: 768px) {
   img {
-    width: 220px;
-    height: 190px;
+    width: 170px;
+    height: 170px;
   }
 }
 @media (min-width: 1024px) {
   img {
-    height: 240px;
+    height: alto/260;
     width: 250px;
     margin-bottom: 15px;
   }
@@ -135,50 +148,53 @@ figcaption a {
   height: 35px;
 }
 
-strong {
-  color: lightslategrey;
-}
-
-.servicios {
-  color: lightyellow;
-}
-
 .contenedor {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   grid-template-areas: "contenido-1" "contenido-2" "contenido-3" "contenido-4" "contenido-5";
+}
+
+.contenido-1 {
+  grid-area: contenido-1;
+  background-color: black;
+  color: goldenrod;
+  padding: 2em;
+  margin: 0;
 }
 
 .contenido-3 {
   grid-area: contenido-3;
   color: lightgoldenrodyellow;
-  margin-left: 80px;
-  margin-right: 80px;
+  font-size: medium;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .contenido-4 {
   grid-area: contenido-4;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.contenido-5 {
+  grid-area: contenido-5;
+  margin-top: 1, 5em;
+  margin-bottom: 0%;
+  background-color: black;
 }
 
 .contenedor2 {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   grid-template-areas: "contenido-1" "contenido-2" "contenido-3" "contenido-6" "contenido-5";
-}
-
-.contenido-5 {
-  grid-area: contenido-5;
-  margin-top: 50px;
-  padding: 1em;
-  background-color: black;
 }
 
 .contenido-6 {
   grid-area: contenido-6;
+  margin-bottom: 40px;
 }
 
 .fotoBlog {
@@ -191,54 +207,61 @@ strong {
 
 aside {
   color: lightslategrey;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 @media (min-width: 500px) {
   .contenedor {
     margin: 0%;
-    justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-template-areas: "contenido-1 contenido-1" "contenido-2 contenido-2" "contenido-3 contenido-3" "contenido-4 contenido-4" "contenido-5 contenido-5";
   }
-  .blog3 {
-    margin-top: 64px;
-  }
   .contenido-3 {
-    margin-top: -50px;
+    margin-top: 21px;
   }
   .contenido-4 {
     gap: 16px;
-    margin-bottom: 5em;
-    margin-top: 5em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+  }
+  .contenedor2 {
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contenido-1 contenido-1" "contenido-2 contenido-2" "contenido-3 contenido-3" "contenido-4 contenido-4" "contenido-6 contenido-6" "contenido-5 contenido-5";
+  }
+  .blog3 {
+    margin-top: 21px;
   }
 }
 @media (min-width: 768px) {
   .contenedor {
     margin-bottom: 1, 5em;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "contenido-1 contenido-1 contenido-1" "contenido-2 contenido-2 contenido-2" "contenido-3 contenido-3 contenido-3" "contenido-4 contenido-4 contenido-4" "contenido-5 contenido-5 contenido-5";
   }
   .contenido-4 {
     display: flex;
-    flex-direction: row;
+    flex-direction: flex;
     justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .contenedor2 {
     margin: 0%;
     justify-content: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "contenido-1 contenido-1 " "contenido-2 contenido-2 " "contenido-3 contenido-3 " "contenido-6 contenido-6 " "contenido-5 contenido-5 ";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "contenido-1 contenido-1 contenido-1" "contenido-2 contenido-2 contenido-2" "contenido-3 contenido-3 contenido-3" "contenido-6 contenido-6 contenido-6" "contenido-5 contenido-5 contenido-5";
   }
   .blog3 {
     margin-top: 5px;
   }
   .contenido-6 {
-    -moz-column-gap: 21px;
-         column-gap: 21px;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -248,17 +271,24 @@ aside {
     border-color: goldenrod;
     width: 120px;
     height: 367px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 10px;
   }
   .blog {
     margin: 0%;
-    margin-left: 80px;
+    margin-left: 25px;
     margin-right: 80px;
   }
   .fotoBlog {
     width: 200PX;
     height: 250PX;
-    margin-left: 50px;
+    margin-left: 10px;
+  }
+}
+@media (min-whidth: 1024px) {
+  .contenedor {
+    margin-bottom: 1, 5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "contenido-1 contenido-1 contenido-1" "contenido-2 contenido-2 contenido-2" "contenido-3 contenido-3 contenido-3" "contenido-4 contenido-4 contenido-4" "contenido-5 contenido-5 contenido-5";
   }
 }/*# sourceMappingURL=style.css.map */
