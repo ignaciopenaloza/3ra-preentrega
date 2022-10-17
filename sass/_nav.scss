@@ -14,21 +14,12 @@
     
 @media(min-width:500px){
 
-    .nav justify-content-center{
+    .nav-link{
         display: flex;
         justify-content: center;
         color: goldenrod;
-        gap: 80px;}}
-        
-        
-        @media(min-whidth: 768px){
-
-            .nav-link{
-                font-size: medium;
-            }
-        }
-        
-}
+        gap: 80px; 
+        font-size: medium;}}}
 
  
 

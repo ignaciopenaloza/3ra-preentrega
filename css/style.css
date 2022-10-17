@@ -30,15 +30,11 @@ body {
   list-style: none;
 }
 @media (min-width: 500px) {
-  .contenido-2 .nav justify-content-center {
+  .contenido-2 .nav-link {
     display: flex;
     justify-content: center;
     color: goldenrod;
     gap: 80px;
-  }
-}
-@media (min-whidth: 768px) {
-  .contenido-2 .nav-link {
     font-size: medium;
   }
 }
@@ -83,8 +79,8 @@ p {
 }
 
 .proyectoUno {
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 30px;
+  margin-left: 30px;
   font-size: medium;
 }
 .proyectoUno strong {
